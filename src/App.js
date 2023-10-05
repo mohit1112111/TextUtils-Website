@@ -7,6 +7,7 @@ import About from './components/About';
 import React, { useState } from 'react'
 import Alert from './components/Alert';
 import { Switch } from 'react-router-dom';
+import Blog from './components/Blog'
 import {
   BrowserRouter as Router,
   Route,
@@ -31,7 +32,7 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = '#464444';
       showAlert("Dark mode has been enabled", "success")
-      
+      document.title = 'TextUtils-DarkMode'
       // document.title = 'TextUtils-DarkMode';
       // setInterval(()=>{
       //   document.title='TextUtils is Amazing';
@@ -60,9 +61,13 @@ function App() {
             <Route exact path="/about">
               <About mode={mode} />
             </Route>
+            <Route excat path="/blog">
+              <Blog mode={mode}/>
+            </Route>
             <Route excat path="/">
               <TextFrom heading="Try TextUtils-Word Counter,Character Counter,Remove extra spaces" mode={mode} showAlert={showAlert} />
             </Route>
+            
 
           </Switch>
         </div>

@@ -138,13 +138,13 @@ export default function TextFrom(props) {
     return (
         <>
             <div className='container' style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
-                <h2 className='heading'>{props.heading}</h2>
+                <h2 className='heading' style={{fontFamily: "'Barlow Condensed', 'sans-serif'"}}>{props.heading}</h2>
                 <div className="mb-2">
 
                     <textarea className="form-control" value={text} onChange={handleUpChange} style={{ backgroundColor: props.mode === 'dark' ? '#383434' : 'white', color: props.mode === 'dark' ? 'white' : 'black' }} id="myBox" rows="8"></textarea>
                 </div>
             </div>
-            <div className='container my-3 text-center col' style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
+            <div className='container my-3 text-center col' style={{ color: props.mode === 'dark' ? 'white' : 'black',fontFamily: "'Barlow Condensed', 'sans-serif'" }}>
                 {/* <div className=''></div> */}
                 <button disabled={text.length === 0} className='btn btn-primary my-1 mx-1 btn-sm' onClick={handleUpClick}>Convert to UpperCase </button>
                 <button disabled={text.length === 0} className='btn btn-success mx-1 my-1 btn-sm' onClick={handleLowerClick}>Convert to LowerCase </button>
@@ -162,7 +162,7 @@ export default function TextFrom(props) {
             </div>
 
 
-            <div className="container my-3" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
+            <div className="container my-3" style={{ color: props.mode === 'dark' ? 'white' : 'black' ,fontFamily: "'Barlow Condensed', 'sans-serif'"}}>
                 <h2>Your Text Summary</h2>
                 <p>{text.length === 0 ? 0 : text.split(/\s+/).length} words {text.length} characters</p>
                 <p>{text.length === 0 ? 0 : text.split('.').length} sentences</p>

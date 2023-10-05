@@ -1,71 +1,51 @@
-import React from 'react'
+import React from 'react';
+import { AiFillGithub, AiOutlineLinkedin, AiFillInstagram, AiFillTwitterSquare } from "react-icons/ai";
 
 const Footer = (props) => {
     return (
-        <div>
+        <div style={{ fontFamily: "'Barlow Condensed', 'sans-serif'", minHeight: '50vh', display: 'flex', flexDirection: 'column' }}>
             <>
-                <footer className={`bg-${props.mode} text-center text-${props.mode}`}>
-                    {/* <!-- Grid container --> */}
-
+                <main style={{ flex: 1 }}>
+                    {/* Your main content goes here */}
+                </main>
+                <footer className={`bg-${props.mode} text-center text-${props.mode}`} style={{ backgroundColor: `rgba(0, 0, 0, 0.7)`, margin: '0', padding: '0' }}>
                     <div className="container p-4 pb-0">
-                        {/* <!-- Section: Social media --> */}
                         <section className="mb-1">
-                            {/* <!-- Facebook --> */}
                             <a
                                 className="btn btn-outline-light btn-floating m-1"
-                                style={{ backgroundColor: `#3b5998` }}
-                                href="https://www.facebook.com/shubham.kohli.948/"
-                                role="button"
-                            >
-                                <i className="fab fa-facebook-f"></i>
-                            </a>
-
-                            {/* <!-- Twitter --> */}
-                            <a
-                                className="btn btn-outline-light btn-floating m-1"
-                                // style="backgroundColor: ;"
                                 style={{ backgroundColor: `#55acee` }}
-                                href="https://twitter.com/Aashiq_skm"
+                                href="https://twitter.com/Mohit_SMS_007?t=2snsrPzhEcbdP5ymLAFvrw&s=09"
                                 role="button"
                             >
-                                <i className="fab fa-twitter"></i>
+                                <AiFillTwitterSquare />
                             </a>
-
-                            {/* <!-- Instagram --> */}
                             <a
                                 className="btn btn-outline-light btn-floating m-1"
                                 style={{ backgroundColor: `#ac2bac` }}
-                                href="https://www.instagram.com/shubh_kohli_18/"
+                                href="https://www.instagram.com/mohit.parjapati.777/"
                                 role="button"
                             >
-                                <i className="fab fa-instagram"></i>
+                                <AiFillInstagram />
                             </a>
-
-                            {/* <!-- Linkedin --> */}
                             <a
                                 className="btn btn-outline-light btn-floating m-1"
                                 style={{ backgroundColor: ` #0082ca` }}
-                                href="https://www.linkedin.com/in/shubham-kumar-8965221a0/"
+                                href="https://www.linkedin.com/in/mohit-kumar-a00571228/"
                                 role="button"
                             >
-                                <i className="fab fa-linkedin-in"></i>
+                                <AiOutlineLinkedin />
                             </a>
-                            {/* <!-- Github --> */}
                             <a
                                 className="btn btn-outline-light btn-floating m-1"
-                                style={{ backgroundColor: `#333333` }}
-                                href="https://github.com/shubhamkumar5051"
+                                style={{ backgroundColor: `#6c6c68` }}
+                                href="https://github.com/mohit1112111"
                                 role="button"
                             >
-                                <i className="fab fa-github"></i>
+                                <AiFillGithub />
                             </a>
                         </section>
                     </div>
-                    {/* <!-- Copyright --> */}
-                    <div
-                        className="text-center p-3"
-                    // style={{ backgroundColor: `rgba(0, 0, 0, 0.7)` }}
-                    >
+                    <div className="text-center p-3">
                         <a
                             style={{ textDecoration: "none" }}
                             className={`text-${props.mode === "light" ? "dark" : "light"}`}
@@ -80,4 +60,6 @@ const Footer = (props) => {
     )
 }
 
-export default Footer
+export default Footer;
+
+

@@ -7,7 +7,7 @@ const Text = (props) => {
     };
     return (
 
-        <div className="row" my-3 style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
+        <div className="row" my-3 style={{ color: props.mode === 'dark' ? 'white' : 'black' ,fontFamily: "'Barlow Condensed', 'sans-serif'"}}>
             <h3>These are some features of TextUtils!</h3>
             <div className="col-sm-6" >
                 <div className="card my-2 ">
